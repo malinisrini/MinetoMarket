@@ -1,0 +1,550 @@
+{
+  "contract_name": "Miner",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetParcelImgHash",
+      "outputs": [
+        {
+          "name": "_imgHash",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetMinerCountry",
+      "outputs": [
+        {
+          "name": "_miner_country",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "v_img_hash",
+          "type": "bytes32"
+        }
+      ],
+      "name": "setimgIPFSHash",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetMinerName",
+      "outputs": [
+        {
+          "name": "_miner_name",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetMinerOriginAddress",
+      "outputs": [
+        {
+          "name": "_originaddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "GetMinerDeployedAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_mname",
+          "type": "bytes32"
+        },
+        {
+          "name": "_mcountry",
+          "type": "bytes32"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b60405160408061024a83398101604052808051919060200180519150505b6000829055600181905560038054600160a060020a03191633600160a060020a03161790555b50505b6101e5806100656000396000f300606060405236156100755763ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166339e721c1811461007a57806340bd70fa1461009f57806366759a78146100c45780639eec4359146100dc578063cb8dfae414610101578063dadbaddb1461013d575b600080fd5b341561008557600080fd5b61008d610179565b60405190815260200160405180910390f35b34156100aa57600080fd5b61008d610180565b60405190815260200160405180910390f35b34156100cf57600080fd5b6100da600435610187565b005b34156100e757600080fd5b61008d610190565b60405190815260200160405180910390f35b341561010c57600080fd5b610114610197565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b341561014857600080fd5b6101146101b4565b60405173ffffffffffffffffffffffffffffffffffffffff909116815260200160405180910390f35b6002545b90565b6001545b90565b60028190555b50565b6000545b90565b60035473ffffffffffffffffffffffffffffffffffffffff165b90565b305b905600a165627a7a723058207a91138609d74f861176a6eca1f2fc5b03f6a3eb2fc1c657566a052eafa98f5a0029",
+  "networks": {
+    "1506882952258": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xcffa1bfcfb68d3642112778a6b220f21a9a9d1e1",
+      "updated_at": 1506886693912
+    },
+    "1506911425148": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xbbfbd5ed3c28b8315cf90407e6e414c602baeed7",
+      "updated_at": 1506911675997
+    },
+    "1507074915139": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb95b9e92ba12e31d95918aacea941b1ef40b0650",
+      "updated_at": 1507076394127
+    },
+    "1507135194436": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xb37af7cdbc2f4c4791519b4dc996a572a67261ba",
+      "updated_at": 1507135480807
+    },
+    "1507158005741": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x34f1429ad22b66e93cfcbba59c4bd3464610b09b",
+      "updated_at": 1507158038128
+    },
+    "1507168597101": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xd143c3a29c7d8cce1304bad79fab53107393777f",
+      "updated_at": 1507169007360
+    },
+    "1507383381172": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xf37d776f3ce99c4e6f6734b9eb2dbcbc2e201e53",
+      "updated_at": 1507383886479
+    },
+    "1510517453614": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x68c64126eecb960cfc18f7fbc09591e0c147c4fe",
+      "updated_at": 1510518990692
+    },
+    "1510525768714": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x6ad1d854b9013bd0d21dcae1023642f4735cb9c5",
+      "updated_at": 1510525788005
+    },
+    "1510525926173": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xebcfea97dc6479fa1acf8fe3c69fc783cfc21fef",
+      "updated_at": 1510525935400
+    },
+    "1511125938530": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xeefba102bd1c892fc23c029d02600956cc8d169f",
+      "updated_at": 1511125984858
+    },
+    "1512232652239": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xfb56e15fa18d851673442550bcb313ce6ef63acb",
+      "updated_at": 1512232924337
+    },
+    "1512775106276": {
+      "events": {
+        "0xe71d37427b9b08d5727eccff6983983b198bcc7281042e2fe19a7b9f71955228": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_mineraddress",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_minername",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minercountry",
+              "type": "bytes32"
+            },
+            {
+              "indexed": false,
+              "name": "_minerbusregnum",
+              "type": "bytes32"
+            }
+          ],
+          "name": "MinerDetails",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x9ef8958c632717dd2b1e5211dfe855d2baa549ee",
+      "updated_at": 1512775142010
+    },
+    "1513717667794": {
+      "events": {},
+      "links": {},
+      "address": "0xb8670df9287cbc5c3fc0de338962aff6cc588150",
+      "updated_at": 1513717680788
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1513717680788
+}

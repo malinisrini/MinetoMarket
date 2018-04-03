@@ -1,0 +1,575 @@
+Using network 'development'.
+
+ContractFactory {
+  eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     signTransaction: { [Function: send] request: [Function: bound ], call: 'eth_signTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  abi: 
+   [ { constant: false,
+       inputs: [],
+       name: 'GetMinerCountry',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetMinerBusRegNum',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: true,
+       inputs: [Object],
+       name: 'bytes32ToString',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetMinerName',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetMinerOriginAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetMinerDeployedAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { inputs: [Object], payable: false, type: 'constructor' },
+     { anonymous: false,
+       inputs: [Object],
+       name: 'MinerDetails',
+       type: 'event' } ],
+  new: { [Function] getData: [Function: bound ] } }
+Creating Contract
+ContractFactory {
+  eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     signTransaction: { [Function: send] request: [Function: bound ], call: 'eth_signTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  abi: 
+   [ { constant: false,
+       inputs: [],
+       name: 'GetCuttingPolisherDeployedAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: true,
+       inputs: [Object],
+       name: 'bytes32ToString',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetCuttingPolisherOriginAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetCuttingPolisherCountry',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetCuttingPolisherBusRegNum',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetCuttingPolisherName',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { inputs: [Object], payable: false, type: 'constructor' } ],
+  new: { [Function] getData: [Function: bound ] } }
+Creating CP Contract
+ContractFactory {
+  eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     signTransaction: { [Function: send] request: [Function: bound ], call: 'eth_signTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  abi: 
+   [ { constant: false,
+       inputs: [],
+       name: 'GetManufacturerCountry',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetManufacturerOriginAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetManufacturerBusRegNum',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetManufacturerName',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetManufacturerDeployedAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: true,
+       inputs: [Object],
+       name: 'bytes32ToString',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { inputs: [Object], payable: false, type: 'constructor' } ],
+  new: { [Function] getData: [Function: bound ] } }
+Creating Manufacturer Contract
+ContractFactory {
+  eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     signTransaction: { [Function: send] request: [Function: bound ], call: 'eth_signTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  abi: 
+   [ { constant: false,
+       inputs: [],
+       name: 'GetRoughTraderDeployedAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRoughTraderCountry',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRoughTraderBusRegNum',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: true,
+       inputs: [Object],
+       name: 'bytes32ToString',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRoughTraderOriginAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRoughTraderName',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { inputs: [Object], payable: false, type: 'constructor' } ],
+  new: { [Function] getData: [Function: bound ] } }
+Creating RT Contract
+ContractFactory {
+  eth: 
+   Eth {
+     _requestManager: RequestManager { provider: [Object], polls: {}, timeout: null },
+     getBalance: { [Function: send] request: [Function: bound ], call: 'eth_getBalance' },
+     getStorageAt: { [Function: send] request: [Function: bound ], call: 'eth_getStorageAt' },
+     getCode: { [Function: send] request: [Function: bound ], call: 'eth_getCode' },
+     getBlock: { [Function: send] request: [Function: bound ], call: [Function: blockCall] },
+     getUncle: { [Function: send] request: [Function: bound ], call: [Function: uncleCall] },
+     getCompilers: { [Function: send] request: [Function: bound ], call: 'eth_getCompilers' },
+     getBlockTransactionCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: getBlockTransactionCountCall] },
+     getBlockUncleCount: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: uncleCountCall] },
+     getTransaction: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionByHash' },
+     getTransactionFromBlock: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: [Function: transactionFromBlockCall] },
+     getTransactionReceipt: 
+      { [Function: send]
+        request: [Function: bound ],
+        call: 'eth_getTransactionReceipt' },
+     getTransactionCount: { [Function: send] request: [Function: bound ], call: 'eth_getTransactionCount' },
+     call: { [Function: send] request: [Function: bound ], call: 'eth_call' },
+     estimateGas: { [Function: send] request: [Function: bound ], call: 'eth_estimateGas' },
+     sendRawTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendRawTransaction' },
+     signTransaction: { [Function: send] request: [Function: bound ], call: 'eth_signTransaction' },
+     sendTransaction: { [Function: send] request: [Function: bound ], call: 'eth_sendTransaction' },
+     sign: { [Function: send] request: [Function: bound ], call: 'eth_sign' },
+     compile: { solidity: [Object], lll: [Object], serpent: [Object] },
+     submitWork: { [Function: send] request: [Function: bound ], call: 'eth_submitWork' },
+     getWork: { [Function: send] request: [Function: bound ], call: 'eth_getWork' },
+     coinbase: [Getter],
+     getCoinbase: { [Function: get] request: [Function: bound ] },
+     mining: [Getter],
+     getMining: { [Function: get] request: [Function: bound ] },
+     hashrate: [Getter],
+     getHashrate: { [Function: get] request: [Function: bound ] },
+     syncing: [Getter],
+     getSyncing: { [Function: get] request: [Function: bound ] },
+     gasPrice: [Getter],
+     getGasPrice: { [Function: get] request: [Function: bound ] },
+     accounts: [Getter],
+     getAccounts: { [Function: get] request: [Function: bound ] },
+     blockNumber: [Getter],
+     getBlockNumber: { [Function: get] request: [Function: bound ] },
+     protocolVersion: [Getter],
+     getProtocolVersion: { [Function: get] request: [Function: bound ] },
+     iban: 
+      { [Function: Iban]
+        fromAddress: [Function],
+        fromBban: [Function],
+        createIndirect: [Function],
+        isValid: [Function] },
+     sendIBANTransaction: [Function: bound transfer] },
+  abi: 
+   [ { constant: false,
+       inputs: [],
+       name: 'GetRetailerCountry',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRetailerBusRegNum',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: true,
+       inputs: [Object],
+       name: 'bytes32ToString',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRetailerName',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRetailerDeployedAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { constant: false,
+       inputs: [],
+       name: 'GetRetailerOriginAddress',
+       outputs: [Object],
+       payable: false,
+       type: 'function' },
+     { inputs: [Object], payable: false, type: 'constructor' } ],
+  new: { [Function] getData: [Function: bound ] } }
+Creating Retailer Contract
+
+
+[92m [0m[32m 0 passing[0m[90m (0ms)[0m
+
+Hash0x197abe9612540a8d0e84fa7c4fa3bbae1d680a74713e88823fb49a595ae66465
+Hash0x6bab59accf3deec53787f5468c9d2b9f0e1b8ae1da9982044e60e69966898e8f
+Hash0x7ec841e94de5f7d887b57f6d4920125bd444d35f35445069374972236d5005a3
+Hash0xaa5a2e0dcef668c9536ffa6830f68a674f2598f6a22357b998510b5f0f9ebbfe
+Hash0x126ca08b708e29154275a51fd7856b535edfb45922aad0a337bf5bc851f4fc17
+Hash0x1be637d94029c2f8669abb94770f4479c5f4f2b97b668b0504cb59827f3c8761
+Hash0xec3f110aebaaca7822b8e6b29c884b814b5897679648eff8282df80228fa4734
+Hash0x3829af527b6ef096470d3b4cea9476743a1418e2d9de9b24eeb7f5c1a1604662
+Hash0xbfeefdc4e08d203694cd22515a5039823fee6c3a620a7e8228731a1758b0bd0c
+Hash0x8c5cb99587f645e89c0ccb8fe5c4a431b41ee6d778604fc5b61826ab6fd7b2c9
+Hash0xbfeefdc4e08d203694cd22515a5039823fee6c3a620a7e8228731a1758b0bd0c
+Retailer Contract Address 1: 0xdd8a782d8b0b6f96be7e3e18e2e9c267b0a14dcd
+SUCCCCESSSSSSSSSSSSSSSSFUL RETAILER CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x197abe9612540a8d0e84fa7c4fa3bbae1d680a74713e88823fb49a595ae66465
+Miner Contract 1 Address: 0x121c38589c4ea535c3498e52b7904b8e35ff4176
+SUCCCCESSSSSSSSSSSSSSSSFUL MINER CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x7ec841e94de5f7d887b57f6d4920125bd444d35f35445069374972236d5005a3
+ 
+Cutting Polisher Contract Address 1: 0xfa697416f9dc8c656111b4d4d8a4a9f7d6ebc2cf
+ 
+SUCCCCESSSSSSSSSSSSSSSSFUL CP CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x126ca08b708e29154275a51fd7856b535edfb45922aad0a337bf5bc851f4fc17
+ 
+Manufacturer Contract Address 1: 0x9b02949989e74fc9b9bf69105710b192aaf1b5d4
+ 
+SUCCCCESSSSSSSSSSSSSSSSFUL MANUFACTURER CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0xec3f110aebaaca7822b8e6b29c884b814b5897679648eff8282df80228fa4734
+RoughTrader Contract Address 1: 0x309e32eb6eef15aaddde53866ff05693aed94c64
+SUCCCCESSSSSSSSSSSSSSSSFUL RT CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x6bab59accf3deec53787f5468c9d2b9f0e1b8ae1da9982044e60e69966898e8f
+Miner Contract 2 Address: 0x1d057ffce026f85c238f6a06fa25ded063459edb
+SUCCCCESSSSSSSSSSSSSSSSFUL MINER CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0xaa5a2e0dcef668c9536ffa6830f68a674f2598f6a22357b998510b5f0f9ebbfe
+Cutting Polisher Contract Address 2: 0x9ff214cac913e666a5649e390ac402a7df39068a
+SUCCCCESSSSSSSSSSSSSSSSFUL CP CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x8c5cb99587f645e89c0ccb8fe5c4a431b41ee6d778604fc5b61826ab6fd7b2c9
+ 
+Retailer Contract Address 2: 0x5d5139f70fb518214cd01f341f7055854f429408
+ 
+SUCCCCESSSSSSSSSSSSSSSSFUL RETAILER CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x1be637d94029c2f8669abb94770f4479c5f4f2b97b668b0504cb59827f3c8761
+ 
+Manufacturer Contract Address 2: 0xfd0e53123c12845b895410360af48571d358f354
+ 
+SUCCCCESSSSSSSSSSSSSSSSFUL CP CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS
+Hash0x3829af527b6ef096470d3b4cea9476743a1418e2d9de9b24eeb7f5c1a1604662
+ 
+RoughTrader Contract Address 2: 0x810190a4dba222fd3977b51b2b700eee868a3f93
+ 
+SUCCCCESSSSSSSSSSSSSSSSFUL RT CONTRACT DEPLOYMENT - CONGRAAAAAAAAAAAAAAAATS

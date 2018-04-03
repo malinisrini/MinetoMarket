@@ -1,0 +1,56 @@
+pragma solidity ^0.4.0;
+
+contract Miner {
+
+	bytes32 MinerName;
+	bytes32 MinerCountry;
+	bytes32 MinerBusRegNum;
+	address MinerAddress;
+	
+	event MinerDetails(address _mineraddress, bytes32 _minername,bytes32 _minercountry, bytes32 _minerbusregnum);
+	
+	function Miner(bytes32 _mname, bytes32 _mcountry, bytes32 _mbusregnum) {
+  		MinerName = _mname;
+  		MinerCountry = _mcountry;
+  		MinerBusRegNum = _mbusregnum;
+  		MinerAddress = msg.sender;
+  		MinerDetails(MinerAddress, MinerName, MinerCountry, MinerBusRegNum);
+  	}
+  	
+  	function GetMinerName() returns (bytes32 _miner_name) {
+  		return MinerName;
+  	}
+  	
+  	function GetMinerCountry() returns (bytes32 _miner_country) {
+  		return MinerCountry;
+  	}
+
+  	function GetMinerOriginAddress() returns (address _originaddress){
+  		return MinerAddress;
+  	}
+
+	function GetMinerBusRegNum() returns (bytes32 _miner_busregnum){
+  		return MinerBusRegNum;
+  	}
+
+    function GetMinerDeployedAddress() returns (address){
+        return this;    
+    }
+    function bytes32ToString(bytes32 x) constant returns (string) {
+        bytes memory bytesString = new bytes(32);
+        uint charCount = 0;
+        for (uint j = 0; j < 32; j++) {
+            byte char = byte(bytes32(uint(x) * 2 ** (8 * j)));
+            if (char != 0) {
+                bytesString[charCount] = char;
+                charCount++;
+            }
+        }
+        bytes memory bytesStringTrimmed = new bytes(charCount);
+        for (j = 0; j < charCount; j++) {
+            bytesStringTrimmed[j] = bytesString[j];
+        }
+        return string(bytesStringTrimmed);
+    }
+}
+
