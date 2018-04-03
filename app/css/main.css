@@ -1,0 +1,87 @@
+.temp-bg {
+  background: antiquewhite; /* to be changed */
+}
+
+.content {
+  background: azure; /* to be changed */
+  box-shadow: 0px 5px 30px 10px grey;
+  border-radius: 25px;
+}
+
+.user-img {
+  height: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 25px 0px grey;
+}
+
+.no-border-top {
+  border: none !important;
+}
+
+.details {
+  font-size: 24px;
+  border: black 1px solid;
+  border-radius: 25px 25px 0px 0px;
+}
+
+div.details.collapsed {
+  border-radius: 25px !important;
+}
+
+.parcel-input {
+  border: lightgrey 1px solid;
+}
+
+.table-details {
+  border: 1px solid black;
+  border-radius: 0px 0px 25px 25px;
+  border-top: none;
+}
+
+.border-rounded{
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 2px grey;
+  outline: 0;
+}
+
+.text-black {
+  color: black;
+}
+
+.p-10 {
+  padding: 10px !important;
+}
+
+.p-15 {
+  padding: 10px !important;
+}
+
+.py-10 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.px-25 {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.m-10 {
+  margin: 10px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}

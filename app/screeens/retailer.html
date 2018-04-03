@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+</head>
+<body class="temp-bg">
+  <div id="maincont" class="main_wrapper">
+    <div class="container">
+      <div class="content mt-100 mb-100 p-15">
+        <div class="row">
+          <div class="col-xs-12">
+            <img src="images/retailer.png" alt="Retailer" title="Retailer" class="user-img pull-right m-10">
+            <div class="pull-left text-left">
+              <h3 class="m-10">Retailer</h3>
+              <!-- <table class="table">
+                <tbody>
+                  <tr>
+                    <td class="no-border-top"><span>Retailer Name : <b>Johny Walker</b></span></td>
+                  </tr>
+                  <tr>
+                    <td class="no-border-top"><span>Country : <b>United States of America</b></span></td>
+                  </tr>
+                  <tr>
+                    <td class="no-border-top"><span>Town / Village : <b>Las Vegas</b></span></td>
+                  </tr>
+                  <tr>
+                    <td class="no-border-top"><span>Business Registration : <b>BR1009</b></span></td>
+                  </tr>
+                </tbody>
+              </table> -->
+            </div>
+          </div>
+        </div>
+        <form id="id_form_manufacturer" action="">
+          <div class="row">
+            <div class="col-xs-12">
+              <div data-toggle="collapse" data-target="#table_miner" aria-expanded="true" class="details collapsed" id="id_miner">
+                <i class="fa fa-plus-circle p-10" aria-hidden="true" id="icon_miner"></i> Miner
+              </div>
+              <div id="table_miner" class="table-details collapse">
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Miner Name</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_miner_name" value="John Doe" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Miner Country</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_miner_country" value="Tanzania" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Miner Town / Village</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_miner_town_village" value="Dadoma" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Miner Business Registration</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_miner_br" value="BR2001" class="form-control" disabled style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xs-12">
+              <div data-toggle="collapse" data-target="#table_rough_trader" aria-expanded="true" class="details collapsed" id="id_rough_trader">
+                <i class="fa fa-plus-circle p-10" aria-hidden="true" id="icon_rough_trader"></i> Rough Trader
+              </div>
+              <div id="table_rough_trader" class="table-details collapse">
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Rough Trader Name</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_rtc" value="Lilson George" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Rough Trader Country</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_rtc" value="South Africa" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Rough Trader Town / Village</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_rttv" value="Cape Town" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Rough Trader Business Registration</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_rtbr" value="BR5009" class="form-control" disabled style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xs-12">
+              <div data-toggle="collapse" data-target="#table_cutting_polisher" aria-expanded="true" class="details collapsed" id="id_cutting_polisher">
+                <i class="fa fa-plus-circle p-10" aria-hidden="true" id="icon_cutting_polisher"></i> Cutting Polisher
+              </div>
+              <div id="table_cutting_polisher" class="table-details collapse">
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Cutting Polisher Name</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_cutting_polisher_name" value="Anthony Alsop" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Cutting Polisher Country</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_cutting_polisher_country" value="Kenya" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Cutting Polisher Town / Village</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_cutting_polisher_town_village" value="Mombasa" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Cutting Polisher Business Registration</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_cutting_polisher_br" value="BR6003" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xs-12">
+              <div data-toggle="collapse" data-target="#table_manufacturer" aria-expanded="true" class="details collapsed" id="id_manufacturer">
+                <i class="fa fa-plus-circle p-10" aria-hidden="true" id="icon_manufacturer"></i> Manufacturer
+              </div>
+              <div id="table_manufacturer" class="table-details collapse">
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Manufacturer Name</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_manufacturer_name" value="Charles Xavier" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Manufacturer Country</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_manufacturer_country" value="United States of America" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Manufacturer Town / Village</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_manufacturer_town_village" value="New York City" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Manufacturer Business Registration</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_manufacturer_br" value="BR1001" class="form-control" style="cursor: default;" disabled>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xs-12">
+              <div data-toggle="collapse" data-target="#table_retailer" aria-expanded="true" class="details collapsed" id="id_retailer">
+                <i class="fa fa-plus-circle p-10" aria-hidden="true" id="icon_retailer"></i> Retailer
+              </div>
+              <div id="table_retailer" class="table-details collapse">
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Retailer Name</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_retailer_name" value="Johny Walker" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Retailer Country</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_retailer_country" value="United States of America" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Retailer Town / Village</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_retailer_town_village" value="Las Vegas" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Retailer Business Registration</div>
+                    <div class="col-xs-6">
+                      <input type="text" id="id_retailer_br" value="BR1009" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xs-12">
+              <div data-toggle="collapse" data-target="#table_parcel_details" aria-expanded="true" class="details collapsed" id="id_parcel_details">
+                <i class="fa fa-plus-circle p-10" aria-hidden="true" id="icon_parcel_details"></i> Parcel
+              </div>
+              <div id="table_parcel_details" class="table-details collapse">
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Rough Diamond</div>
+                    <div class="col-xs-6"><input type="text" id="id_rd" value="1234" class="form-control" required></div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Diamond Weight</div>
+                    <div class="col-xs-6"><input type="text" id="id_dw" value="50" class="form-control" required></div>
+                  </div>
+                </div>
+                <div class="row p-10">
+                  <div class="col-xs-12">
+                    <div class="col-xs-6">Diamond Value</div>
+                    <div class="col-xs-6"><input type="text" id="id_dv" value="43000" class="form-control" required></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-xs-12">
+              <table class="table">
+                <tbody><tr><td class="no-border-top"><span>UID : 4567 1234 7890</span></td></tr></tbody>
+              </table>  
+            </div>
+          </div>
+          <div class="row mb-10">
+            <div class="col-xs-12 text-center">
+              <button id="btn_sell_to_customer" type="submit" class="btn btn-default border-rounded text-black">Sell to Retailer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
